@@ -1,0 +1,72 @@
+#dashborad-painel {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  min-height: 800px;
+
+  .ng-card {
+    height: 800px;
+    border: 0px;
+    border-radius: 0px;
+    z-index: 0;
+    position: relative;
+    margin: 1px 0px 0px 1px;
+    background: #dfe3eb;    
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.breadcrumbs {
+  color: #8e8e8e;
+  margin-right: 30px;
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  a {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #8e8e8e;
+    text-transform: none;
+  }
+  .divisor {
+    color: #8e8e8e;
+    text-transform: none;
+  }
+}
+
+.titulo-dashboard {
+  color: #01213b;
+  font-size: 32px;
+  margin-top: 30px;
+  display: inline-block;
+  width: 60%;
+
+  img {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+.produto {
+  float: right;  
+  width: 20%;
+
+  .titulo-produto {
+    color: #000000;
+    font-size: 16px;
+    margin-top: 30px;
+    display: inline-block; 
+    margin-right: 15px;
+  }
+
+  .select-produto {
+    background: transparent;
+    color: #8e8e8e;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 30px 12px 50px;
+    border: 1px solid #4794ce;
+    display: inline-block;
+  }
+}

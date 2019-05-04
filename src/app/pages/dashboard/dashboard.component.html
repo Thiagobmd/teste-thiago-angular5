@@ -1,0 +1,22 @@
+<div id="dashborad-painel">
+  <nb-card class="ng-card">
+    <nb-card-body>
+
+      <div class="breadcrumbs">
+        <a href="">Página Inicial</a>
+        <span class="divisor"> > </span>
+        <a href="">Painel de Gestão</a>
+      </div>
+
+      <div class="titulo-dashboard"><img src="./assets/images/globo-dashboard.png"> Painel de Gestão</div>
+      <div class="produto">
+          <span class="titulo-produto">Produto:</span>  
+          <select class="select-produto">
+              <option *ngFor="let produto of produtosLista" value={{produto.id}}>
+                  {{ produto.tipo }}
+              </option>
+          </select>
+      </div>
+    </nb-card-body>
+  </nb-card>
+</div>

@@ -1,0 +1,26 @@
+<div class="header-container"
+     [class.left]="position === 'normal'"
+     [class.right]="position === 'inverse'">
+  <div class="logo-containter">
+    <div class="logo" (click)="goToHome()"><img src="./assets/images/logo.png" /></div>
+  </div>
+</div>
+
+<div class="header-container">  
+      <span class="grupo-economico">Grupo Econômico:</span>  
+      <select class="select-grupo-economico">
+          <option *ngFor="let grupo of gruposEconomicos" value={{grupo.id}}>
+              {{ grupo.tipo }}
+          </option>
+      </select>
+  <nb-actions
+    size="medium"
+    [class.right]="position === 'normal'">
+    
+    <nb-action *nbIsGranted="['view', 'user']" >
+      <nb-user id="user-caixa" [picture]="user?.picture" [name]="user?.name"></nb-user>
+      <nb-action id="notificacao" class="control-item icone-not" icon="nb-notifications icon-not"></nb-action>
+    </nb-action>
+   
+  </nb-actions>
+</div>
